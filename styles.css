@@ -1,0 +1,92 @@
+/* General adjustments for sizes and margins */
+h1 {
+    font-size: 1.5rem; /* Reduce the size of the main title */
+    margin: 10px 0; /* Reduced margin for the title */
+}
+
+h2 {
+    font-size: 1rem; /* Reduce the font size of h2 */
+    margin: 5px 0; /* Reduce the top and bottom margin */
+}
+
+/* Card header text bold */
+.card-header h5 {
+    font-size: 1rem;
+    font-weight: bold; /* Makes the text bold */
+    margin: 0; /* Remove default margin */
+}
+
+.card-header {
+    font-size: 0.9rem; /* Further reduce the font size of the header */
+    padding: 5px; /* Keep the header padding */
+    padding-left: 15px; /* Move it away from the left side */
+}
+
+.card-title {
+    font-size: 1rem; /* Font size of the title in the card */
+}
+
+.card {
+    height: 480px; /* Increase the height of the cards to 480px */
+}
+
+.card-body {
+    padding: 0; /* Keep the padding of the card body as zero */
+    height: calc(100% - 35px); /* Adjust height to compensate for the header */
+    display: flex; /* Use flexbox to allow growth */
+    flex-direction: column; /* Column direction for content */
+}
+
+pre {
+    background: #2e2e2e; /* Dark background */
+    padding: 10px; /* Keep the padding to improve readability */
+    height: 100%; /* Occupy the entire available height */
+    overflow: auto; /* Automatic scrollbar */
+    white-space: pre-wrap; /* To wrap long lines */
+    margin: 0; /* Remove margins */
+    flex-grow: 1; /* Allow <pre> to occupy the remaining space */
+}
+
+code {
+    display: block; /* Display as a block to ensure indentation */
+    height: 100%; /* Occupy the entire height of <pre> */
+}
+
+/* Buttons */
+.btn-spacing {
+    margin: 0 10px; /* Horizontal spacing between buttons */
+    flex-grow: 1; /* Makes buttons grow to the same size */
+}
+
+.btn-group {
+    display: flex; /* Align buttons horizontally */
+}
+
+/* Modal */
+.modal-lg-custom {
+    max-width: 90%; /* Set the maximum width to 90% of the screen */
+    width: auto; /* Allow the modal to resize automatically */
+}
+
+/* Style to increase modal size */
+.modal-lg-custom {
+    max-width: 90%; /* Sets the maximum width to 90% of the screen */
+    width: auto; /* Allows the modal to be auto-resized */
+}
+
+/* Custom style for button spacing */
+.btn-spacing {
+    margin: 0 10px; /* Horizontal spacing between buttons */
+    flex-grow: 1; /* Makes buttons grow to the same size */
+}
+
+/* To make all buttons have the same height */
+.btn-group {
+    display: flex; /* Align buttons horizontally */
+}
+
+/* Remover destaque de operadores */
+.token.operator {
+    color: inherit;  /* Use a cor padrão ou a cor do texto */
+    font-weight: normal;  /* Remover qualquer estilo adicional */
+}
